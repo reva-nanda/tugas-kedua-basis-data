@@ -1,0 +1,146 @@
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5edec;
+  color: #333;
+}
+
+header {
+  background: #c05757;
+  color: rgb(52, 26, 26);
+  text-align: center;
+  padding: 20px;
+}
+
+.profil {
+  text-align: center;
+  background: white;
+  margin: 20px auto;
+  padding: 20px;
+  width: 89%;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.profil img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.card img {
+  width: 100%;          /* biar gambar ngikutin lebar card */
+  max-width: 100%;      /* jangan lebih besar dari card */
+  height: 160px;        /* batasi tinggi */
+  object-fit: cover;    /* crop gambar rapi */
+  border-radius: 8px;   /* biar sudut ikut card */
+  display: block;       /* hilangin space bawah gambar */
+  overflow: hidden;
+  background-image: cover;
+}
+
+.harapan img,
+.hal2 img,
+.hal3 img,
+.hal4 img,
+.entitas img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+}
+
+.card{
+  flex: 0 0 250px;      /*lebar tetap card */
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card h3 {
+  margin: 10px 0 5px;
+  font-size: 16px;
+}
+
+.card h3 a {
+  color: purple;
+  text-decoration: none;
+}
+
+.card h3 a:hover {
+  text-decoration: underline;
+}
+
+/* Isi teks */
+.card p {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.5;
+}
+
+.text {
+  font-family: 'poppins', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #e97070;
+  color: white;
+  margin-top: 20px;
+}
+
+div.artikel {
+  /* display: inline-block; */
+  margin-left: 150px;
+}
+/* .articles {
+  display: flex;
+  flex-wrap: wrap;        biar turun kalau layar kecil
+  gap: 20px;              jarak antar card
+  padding: 20px;
+} */
+
+.harapan, .hal2, .hal3, .hal4, .entitas {
+  width: 250px;          
+  /* background: white; */
+  padding: 15px;
+  border-radius: 10px;
+  /* box-shadow: 0 2px 5px rgba(0,0,0,0.1); */
+  transition: 0.3s;
+  flex: 0 0 250px;         
+  margin: 10px; 
+  display: inline-block;
+  flex-wrap: wrap;
+
+
+  /* text-align: center; */
+  /* background: white;
+  margin: 20px auto;
+  padding: 20px;
+  width: 89%;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); */
+
+}
+
+.harapan:hover, .hal2:hover, .hal3:hover, .hal4:hover, .entitas:hover {
+  transform: scale(1.05);
+}
+
+/* .harapan:hover,
+.hal2:hover,
+.hal3:hover,
+.hal4:hover,
+.entitas:hover {
+  box-shadow: 0 0 20px rgba(236, 90, 90, 0.3);
+  transform: translateY(-8px);      agar glow pas di pencet
+} */
